@@ -1,0 +1,136 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  z-index: 100;
+}
+
+.popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  height: 260px;
+  background-color: #ddd;
+}
+
+.popup-inner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.popup-inner .register {
+  position: absolute;
+  bottom: 10px;
+  left: 16px;
+}
+
+.popup-inner .learn-more {
+  position: absolute;
+  bottom: 10px;
+  right: 16px;
+}
+
+.popup-inner .learn-more {
+  background: linear-gradient(to bottom right, #686464, #686464);
+  border: 0;
+  border-radius: 12px;
+  color: #f9d3b4;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.popup-inner .learn-more:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgb(249, 211, 180, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.popup-inner .learn-more:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #f9d3b4, .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.popup-inner .register {
+  background: linear-gradient(to bottom right, #f9d3b4, #f9d3b4);
+  border: 0;
+  border-radius: 12px;
+  color: #686464;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.popup-inner .register:not([disabled]):focus {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgb(249, 211, 180, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.popup-inner .register:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem #f9d3b4, .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.popup-inner .close-btn {
+  background: #f9d3b4;
+  border: 1px solid #f9d3b4;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #686464;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 3px;
+  min-height: 40px;
+  outline: 0;
+  padding: 5px 5px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.popup-inner .close-btn:hover,
+.popup-inner .close-btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #686464;
+}
+
+.popup-inner .close-btn:active {
+  opacity: .5;
+}

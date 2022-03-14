@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import SearchIcon from "../assets/search.svg";
 import EventCard from "./EventCard";
-import "./Search.css";
+import "../styles/Search.css";
 
 const API_URL = "https://my-json-server.typicode.com/ShrikaraVarna/demodata/db";
 
