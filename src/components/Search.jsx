@@ -3,6 +3,7 @@ import SearchIcon from "../assets/search.svg";
 import EventCard from "./EventCard";
 import "../styles/Search.css";
 
+//temporary events api
 const API_URL = "https://my-json-server.typicode.com/ShrikaraVarna/demodata/db";
 
 const Search = () => {
@@ -18,7 +19,6 @@ const Search = () => {
     const data = await response.json();
 
     setEvents(data.Search);
-    console.log(data.Search);
   };
   return (
     <>
